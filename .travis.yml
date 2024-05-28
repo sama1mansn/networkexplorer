@@ -12,7 +12,7 @@ cache:
     - node_modules
 
 notifications:
-  email: false
+  email: true
 
 script:
   - if [[ $TRAVIS_PULL_REQUEST != false ]]; then npx commitlint-travis; fi
